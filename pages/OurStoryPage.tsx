@@ -22,7 +22,7 @@ const OurStoryPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-brand-espresso/90 via-brand-espresso/60 to-transparent" />
         </div>
 
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
+        <div className="container mx-auto px-6 md:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ const OurStoryPage: React.FC = () => {
 
       {/* Day 1 Mentality - Image Left */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-8">
+        <div className="container mx-auto px-6 md:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -58,9 +58,9 @@ const OurStoryPage: React.FC = () => {
                   alt="Day 1 Mentality"
                   className="rounded-3xl shadow-xl w-full h-80 md:h-[450px] object-cover"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-brand-red text-white p-6 rounded-2xl shadow-xl">
-                  <p className="font-serif text-3xl font-bold">2017</p>
-                  <p className="text-sm text-white/80">Founded</p>
+                <div className="absolute bottom-4 right-4 md:-bottom-6 md:-right-6 bg-brand-red text-white p-4 md:p-6 rounded-xl md:rounded-2xl shadow-xl">
+                  <p className="font-serif text-2xl md:text-3xl font-bold">2017</p>
+                  <p className="text-xs md:text-sm text-white/80">Founded</p>
                 </div>
               </div>
             </motion.div>
@@ -92,7 +92,7 @@ const OurStoryPage: React.FC = () => {
 
       {/* Stats + Collaboration Combined - Unique Layout */}
       <section className="py-24 bg-brand-espresso overflow-hidden">
-        <div className="container mx-auto px-4 md:px-8">
+        <div className="container mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left - Big Numbers */}
             <motion.div
@@ -143,7 +143,7 @@ const OurStoryPage: React.FC = () => {
 
       {/* Our Footprint */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-8">
+        <div className="container mx-auto px-6 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -173,7 +173,7 @@ const OurStoryPage: React.FC = () => {
                     alt="Kenangan Coffee Malaysia"
                     className="w-full h-96 object-cover rounded-2xl"
                   />
-                  <div className="absolute -bottom-4 -right-4 bg-brand-red text-white px-6 py-3 rounded-xl font-bold shadow-lg">
+                  <div className="absolute bottom-4 right-4 md:-bottom-4 md:-right-4 bg-brand-red text-white px-4 py-2 md:px-6 md:py-3 rounded-lg md:rounded-xl font-bold text-sm md:text-base shadow-lg">
                     100+ Outlets
                   </div>
                 </div>
@@ -205,7 +205,7 @@ const OurStoryPage: React.FC = () => {
                     alt="Kenangan Coffee Indonesia"
                     className="w-full h-96 object-cover rounded-2xl"
                   />
-                  <div className="absolute -bottom-4 -left-4 bg-brand-espresso text-white px-6 py-3 rounded-xl font-bold shadow-lg">
+                  <div className="absolute bottom-4 left-4 md:-bottom-4 md:-left-4 bg-brand-espresso text-white px-4 py-2 md:px-6 md:py-3 rounded-lg md:rounded-xl font-bold text-sm md:text-base shadow-lg">
                     800+ Outlets
                   </div>
                 </div>
@@ -228,7 +228,7 @@ const OurStoryPage: React.FC = () => {
 
       {/* Offices & Academies - Bento Grid */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-8">
+        <div className="container mx-auto px-6 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

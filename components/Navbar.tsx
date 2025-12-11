@@ -48,10 +48,10 @@ const Navbar: React.FC = () => {
                   key={link.label}
                   to={link.href}
                   className={`text-sm font-medium tracking-wide uppercase transition-colors ${isActive
-                      ? 'text-brand-red border-b-2 border-brand-red pb-0.5'
-                      : showScrolledStyle
-                        ? 'text-brand-espresso hover:text-brand-red'
-                        : 'text-white/90 hover:text-white'
+                    ? 'text-brand-red border-b-2 border-brand-red pb-0.5'
+                    : showScrolledStyle
+                      ? 'text-brand-espresso hover:text-brand-red'
+                      : 'text-white/90 hover:text-white'
                     }`}
                 >
                   {link.label}
@@ -96,22 +96,32 @@ const Navbar: React.FC = () => {
             </button>
 
             <div className="flex flex-col gap-8 text-center">
-              {NAV_LINKS.map((link, idx) => (
-                <motion.div
-                  key={link.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 + idx * 0.1 }}
-                >
-                  <Link
-                    to={link.href}
-                    className="font-serif text-3xl text-brand-espresso hover:text-brand-red transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
+              {NAV_LINKS.map((link, idx) => {
+                const isActive = location.pathname === link.href;
+                return (
+                  <motion.div
+                    key={link.label}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 + idx * 0.1 }}
+                    className="flex flex-col items-center"
                   >
-                    {link.label}
-                  </Link>
-                </motion.div>
-              ))}
+                    <Link
+                      to={link.href}
+                      className={`font-serif text-3xl transition-colors ${isActive
+                          ? 'text-brand-red'
+                          : 'text-brand-espresso hover:text-brand-red'
+                        }`}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {link.label}
+                    </Link>
+                    {isActive && (
+                      <span className="w-2 h-2 bg-brand-red rounded-full mt-2" />
+                    )}
+                  </motion.div>
+                );
+              })}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

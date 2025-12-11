@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-brand-espresso/90 via-brand-espresso/50 to-transparent" />
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 relative z-10 pt-20">
+      <div className="container mx-auto px-6 md:px-8 relative z-10 pt-20">
         <div className="max-w-2xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
 
-            <h1 className="font-serif text-5xl md:text-7xl font-bold text-white leading-[1.1] mb-6">
+            <h1 className="font-serif text-4xl md:text-7xl font-bold text-white leading-[1.1] mb-6">
               One Cup, <br />
               <span className="text-brand-latte italic">A Million Memories.</span>
             </h1>

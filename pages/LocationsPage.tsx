@@ -196,17 +196,17 @@ const LocationsPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-brand-espresso/90 via-brand-espresso/50 to-transparent" />
         </div>
 
-        <div className="container mx-auto px-4 md:px-8 relative z-10 pt-20">
+        <div className="container mx-auto px-6 md:px-8 relative z-10 pt-20">
           <div className="max-w-2xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <h1 className="font-serif text-7xl md:text-9xl font-bold text-white leading-[1.1] mb-4">
+              <h1 className="font-serif text-5xl md:text-9xl font-bold text-white leading-[1.1] mb-4">
                 {totalOutlets}+
               </h1>
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-brand-latte mb-6">
+              <h2 className="font-serif text-2xl md:text-5xl font-bold text-brand-latte mb-6">
                 Stores across<br />Malaysia
               </h2>
 
@@ -245,7 +245,7 @@ const LocationsPage: React.FC = () => {
 
       {/* Locations Section */}
       <section id="locations" className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 md:px-8">
+        <div className="container mx-auto px-6 md:px-8">
           {/* Section Header */}
           <div className="text-center mb-12">
             <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm mb-3">

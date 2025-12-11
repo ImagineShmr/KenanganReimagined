@@ -26,13 +26,13 @@ const ContactPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-brand-cream">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-brand-espresso via-brand-espresso to-[#1a0f0d] pt-32 pb-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-brand-espresso via-brand-espresso to-[#1a0f0d] pt-32 pb-12 md:pt-36 md:pb-24 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-brand-red/10 rounded-full blur-[120px]" />
           <div className="absolute bottom-1/4 left-1/3 w-48 h-48 bg-brand-gold/10 rounded-full blur-[100px]" />
         </div>
 
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
+        <div className="container mx-auto px-6 md:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ const ContactPage: React.FC = () => {
 
       {/* Contact Content */}
       <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4 md:px-8">
+        <div className="container mx-auto px-6 md:px-8">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
             {/* Contact Info */}
             <motion.div
@@ -77,7 +77,7 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-brand-espresso mb-1">Email</h4>
-                    <a href="mailto:customerservice@kenangancoffee.my" className="text-brand-espresso/70 hover:text-brand-red transition-colors">
+                    <a href="mailto:customerservice@kenangancoffee.my" className="text-brand-espresso/70 hover:text-brand-red transition-colors break-all">
                       customerservice@kenangancoffee.my
                     </a>
                   </div>

@@ -11,8 +11,8 @@ const BENEFITS = [
 const DownloadAppPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-brand-cream">
-      {/* Hero Section - Full Height with QR Code */}
-      <section className="relative h-screen min-h-[700px] flex items-center overflow-hidden bg-gradient-to-br from-brand-espresso via-brand-espresso to-[#1a0f0d]">
+      {/* Hero Section - Responsive Design */}
+      <section className="relative min-h-screen lg:h-screen flex items-center overflow-hidden bg-gradient-to-br from-brand-espresso via-brand-espresso to-[#1a0f0d] pt-24 pb-12 lg:pt-0 lg:pb-0">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             animate={{ rotate: 360 }}
@@ -28,27 +28,27 @@ const DownloadAppPage: React.FC = () => {
           <div className="absolute bottom-1/4 left-1/3 w-48 h-48 bg-brand-gold/10 rounded-full blur-[100px]" />
         </div>
 
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
+        <div className="container mx-auto px-6 md:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-            {/* Left Content */}
+            {/* Left Content - Full width on mobile, centered */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="lg:w-1/2 text-center lg:text-left"
+              className="w-full lg:w-1/2 text-center lg:text-left"
             >
               <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm mb-4">
                 Download Now
               </h4>
-              <h1 className="font-serif text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="font-serif text-3xl md:text-6xl font-bold text-white mb-4 lg:mb-6 leading-tight">
                 Kenangan Coffee App
               </h1>
-              <p className="text-white/60 text-lg mb-8 max-w-lg">
-                Find out how to get free vouchers, priority access and extra benefits. Here's how:
+              <p className="text-white/60 text-base lg:text-lg mb-8 max-w-lg mx-auto lg:mx-0">
+                Get free vouchers, priority access and exclusive benefits.
               </p>
 
-              {/* Benefits List */}
-              <ul className="space-y-4 mb-10 text-left">
+              {/* Benefits List - Compact on mobile */}
+              <ul className="space-y-3 lg:space-y-4 mb-8 lg:mb-10 text-left max-w-md mx-auto lg:mx-0">
                 {BENEFITS.map((benefit, index) => (
                   <motion.li
                     key={index}
@@ -57,39 +57,40 @@ const DownloadAppPage: React.FC = () => {
                     transition={{ delay: 0.3 + index * 0.1 }}
                     className="flex items-start gap-3"
                   >
-                    <div className="w-6 h-6 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Check size={14} className="text-white" />
+                    <div className="w-5 h-5 lg:w-6 lg:h-6 bg-brand-red rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Check size={12} className="text-white lg:hidden" />
+                      <Check size={14} className="text-white hidden lg:block" />
                     </div>
-                    <span className="text-white/80">{benefit}</span>
+                    <span className="text-white/80 text-sm lg:text-base">{benefit}</span>
                   </motion.li>
                 ))}
               </ul>
 
-              {/* App Store Buttons */}
-              <div className="flex flex-row gap-4 justify-center lg:justify-start">
+              {/* App Store Buttons - Centered on mobile */}
+              <div className="flex flex-row gap-3 lg:gap-4 justify-center lg:justify-start">
                 <a href="https://apps.apple.com/my/app/kenangan-coffee/id1643468374" target="_blank" rel="noopener noreferrer" className="group">
                   <img
                     src="/images/download/App-Store-Badge.png"
                     alt="Download on App Store"
-                    className="h-12 md:h-14 w-auto transition-transform group-hover:scale-105"
+                    className="h-11 lg:h-14 w-auto transition-transform group-hover:scale-105"
                   />
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.kenangan.my&hl=ms" target="_blank" rel="noopener noreferrer" className="group">
                   <img
                     src="/images/download/google-play-badge.png"
                     alt="Get it on Google Play"
-                    className="h-12 md:h-14 w-auto transition-transform group-hover:scale-105"
+                    className="h-11 lg:h-14 w-auto transition-transform group-hover:scale-105"
                   />
                 </a>
               </div>
             </motion.div>
 
-            {/* Right - QR Code Section */}
+            {/* Right - QR Code Section - Desktop Only */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="lg:w-1/2 flex justify-center"
+              className="hidden lg:flex lg:w-1/2 justify-center"
             >
               <div className="bg-white rounded-3xl p-12 shadow-2xl text-center w-full max-w-md">
                 {/* Header */}
@@ -129,9 +130,9 @@ const DownloadAppPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Scroll indicator */}
+        {/* Scroll indicator - Desktop only */}
         <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden lg:block"
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
@@ -334,7 +335,7 @@ const DownloadAppPage: React.FC = () => {
             viewport={{ once: true }}
             className="text-center mt-24"
           >
-            <h3 className="font-serif text-2xl md:text-4xl font-bold text-white">
+            <h3 className="font-serif text-xl md:text-4xl font-bold text-white">
               Extra Convenience. Extra Benefits.
             </h3>
           </motion.div>
@@ -346,7 +347,7 @@ const DownloadAppPage: React.FC = () => {
             viewport={{ once: true }}
             className="text-center mt-16 pt-16 border-t border-white/10"
           >
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="font-serif text-2xl md:text-4xl font-bold text-white mb-4">
               Ready to Get Started?
             </h2>
             <p className="text-white/60 text-lg mb-8 max-w-2xl mx-auto">

@@ -41,7 +41,7 @@ const CareersPage: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-brand-espresso/95 via-brand-espresso/70 to-brand-espresso/40" />
         </div>
 
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
+        <div className="container mx-auto px-6 md:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ const CareersPage: React.FC = () => {
             <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm mb-4">
               Join Our Team
             </h4>
-            <h1 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="font-serif text-4xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Brew Your
               <br />
               <span className="text-brand-gold">Career</span>
@@ -91,7 +91,7 @@ const CareersPage: React.FC = () => {
 
       {/* Benefits Section - Full Height Bento Grid */}
       <section id="benefits" className="min-h-screen py-20 bg-white flex items-center">
-        <div className="container mx-auto px-4 md:px-8">
+        <div className="container mx-auto px-6 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -251,7 +251,7 @@ const CareersPage: React.FC = () => {
 
       {/* Meet the Team - Full Height */}
       <section className="min-h-screen py-20 bg-brand-cream flex items-center">
-        <div className="container mx-auto px-4 md:px-8">
+        <div className="container mx-auto px-6 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -315,7 +315,7 @@ const CareersPage: React.FC = () => {
 
       {/* Job Openings - Full Height */}
       <section id="openings" className="min-h-screen py-20 bg-white flex items-center">
-        <div className="container mx-auto px-4 md:px-8 max-w-4xl">
+        <div className="container mx-auto px-6 md:px-8 max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -380,7 +380,7 @@ const CareersPage: React.FC = () => {
 
       {/* CTA - NOT full height */}
       <section className="py-20 bg-gradient-to-br from-brand-espresso to-[#1a0f0d]">
-        <div className="container mx-auto px-4 md:px-8 text-center">
+        <div className="container mx-auto px-6 md:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

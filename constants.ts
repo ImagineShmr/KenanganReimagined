@@ -1,11 +1,11 @@
 import { MenuItem, NavLink, Stat } from './types';
 
 export const NAV_LINKS: NavLink[] = [
-  { label: 'Home', href: '#' },
-  { label: 'Our Menu', href: '#menu' },
-  { label: 'Locations', href: '#locations' },
-  { label: 'Our Story', href: '#story' },
-  { label: 'Careers', href: '#careers' },
+  { label: 'Home', href: '/' },
+  { label: 'Our Menu', href: '/menu' },
+  { label: 'Locations', href: '/locations' },
+  { label: 'Our Story', href: '/our-story' },
+  { label: 'Careers', href: '/careers' },
 ];
 
 export const MENU_ITEMS: MenuItem[] = [
@@ -16,7 +16,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Our signature espresso blended with organic palm sugar and fresh milk.',
     price: 'RM 10.90',
     category: 'Signature',
-    image: 'https://picsum.photos/seed/latte1/400/400',
+    image: '/images/menu/kenangan-latte.jpg',
     isBestSeller: true,
   },
   {
@@ -25,7 +25,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Creamy avocado blended with rich espresso and chocolate shavings.',
     price: 'RM 13.90',
     category: 'Signature',
-    image: 'https://picsum.photos/seed/avocado/400/400',
+    image: '/images/menu/avocado-coffee.jpg',
   },
   {
     id: '9',
@@ -33,7 +33,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'A perfect blend of espresso, steamed milk and rich chocolate syrup.',
     price: 'RM 12.90',
     category: 'Signature',
-    image: 'https://picsum.photos/seed/mocha/400/400',
+    image: '/images/menu/mocha.jpg',
   },
   {
     id: '10',
@@ -41,7 +41,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Espresso with steamed milk, vanilla syrup and a drizzle of salted caramel.',
     price: 'RM 12.50',
     category: 'Signature',
-    image: 'https://picsum.photos/seed/macchiato/400/400',
+    image: '/images/menu/salted-caramel-macchiato.jpg',
   },
 
   // Classic
@@ -51,7 +51,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Bold, robust espresso diluted with hot water for a classic taste.',
     price: 'RM 7.90',
     category: 'Classic',
-    image: 'https://picsum.photos/seed/americano/400/400',
+    image: '/images/menu/creamy-latte.jpg',
   },
   {
     id: '4',
@@ -59,7 +59,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'A sweeter, creamier take on the classic latte with condensed milk.',
     price: 'RM 11.90',
     category: 'Classic',
-    image: 'https://picsum.photos/seed/spanish/400/400',
+    image: '/images/menu/creamy-latte.jpg',
   },
   {
     id: '11',
@@ -67,7 +67,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Equal parts espresso, steamed milk, and milk foam for a creamy texture.',
     price: 'RM 9.90',
     category: 'Classic',
-    image: 'https://picsum.photos/seed/cappuccino/400/400',
+    image: '/images/menu/creamy-latte.jpg',
   },
   {
     id: '12',
@@ -75,17 +75,17 @@ export const MENU_ITEMS: MenuItem[] = [
     description: 'Double shot of espresso topped with silky, micro-foamed milk.',
     price: 'RM 10.50',
     category: 'Classic',
-    image: 'https://picsum.photos/seed/flatwhite/400/400',
+    image: '/images/menu/creamy-latte.jpg',
   },
 
-  // Freezy
+  // Non - Coffee
   {
     id: '5',
     name: 'Hojicha Latte',
     description: 'Roasted green tea latte with a nutty, smoky flavor profile.',
     price: 'RM 11.90',
-    category: 'Freezy',
-    image: 'https://picsum.photos/seed/hojicha/400/400',
+    category: 'Non - Coffee',
+    image: '/images/menu/roasted-tea.jpg',
     isNew: true,
   },
   {
@@ -93,58 +93,58 @@ export const MENU_ITEMS: MenuItem[] = [
     name: 'Belgian Chocolate',
     description: 'Rich, velvety Belgian chocolate milk. Pure indulgence.',
     price: 'RM 10.90',
-    category: 'Freezy',
-    image: 'https://picsum.photos/seed/choco/400/400',
+    category: 'Non - Coffee',
+    image: '/images/menu/chocolate.jpg',
   },
   {
     id: '13',
     name: 'Matcha Latte',
     description: 'Premium Japanese matcha green tea blended with fresh milk.',
     price: 'RM 11.50',
-    category: 'Freezy',
-    image: 'https://picsum.photos/seed/matcha/400/400',
+    category: 'Non - Coffee',
+    image: '/images/menu/green-tea.jpg',
   },
   {
     id: '14',
-    name: 'Cookies & Cream Shake',
-    description: 'Creamy vanilla blended with crushed chocolate cookies.',
-    price: 'RM 12.90',
-    category: 'Freezy',
-    image: 'https://picsum.photos/seed/cookies/400/400',
+    name: 'Thai Tea',
+    description: 'Classic Thai tea with creamy milk and sweet aromatic spices.',
+    price: 'RM 10.90',
+    category: 'Non - Coffee',
+    image: '/images/menu/thai-tea.jpg',
   },
 
-  // Food
+  // Freezy
   {
     id: '7',
-    name: 'Salted Caramel Crossaint',
-    description: 'Flaky pastry filled with gooey salted caramel.',
-    price: 'RM 8.50',
-    category: 'Food',
-    image: 'https://picsum.photos/seed/croissant/400/400',
+    name: 'Freezy Mocha',
+    description: 'Iced blended mocha with rich chocolate and espresso.',
+    price: 'RM 12.90',
+    category: 'Freezy',
+    image: '/images/menu/freezy-mocha.jpg',
   },
   {
     id: '8',
-    name: 'Spicy Tuna Puff',
-    description: 'Savory puff pastry stuffed with spicy tuna flakes.',
-    price: 'RM 9.50',
-    category: 'Food',
-    image: 'https://picsum.photos/seed/puff/400/400',
+    name: 'Freezy Salted Caramel',
+    description: 'Iced blended salted caramel with espresso swirls.',
+    price: 'RM 12.90',
+    category: 'Freezy',
+    image: '/images/menu/freezy-salted-caramel.jpg',
   },
   {
     id: '15',
-    name: 'Chocolate Danish',
-    description: 'Buttery danish pastry filled with rich dark chocolate.',
-    price: 'RM 7.90',
-    category: 'Food',
-    image: 'https://picsum.photos/seed/danish/400/400',
+    name: 'Double Chocolate',
+    description: 'Rich double chocolate blended with ice and cream.',
+    price: 'RM 11.90',
+    category: 'Freezy',
+    image: '/images/menu/double-chocolate.jpg',
   },
   {
     id: '16',
-    name: 'Chicken Mushroom Pie',
-    description: 'Classic savory pie with creamy chicken and mushroom filling.',
-    price: 'RM 9.90',
-    category: 'Food',
-    image: 'https://picsum.photos/seed/pie/400/400',
+    name: 'Strawberry Tea',
+    description: 'Refreshing strawberry tea blended with ice.',
+    price: 'RM 10.90',
+    category: 'Freezy',
+    image: '/images/menu/strawberry-tea.jpg',
   }
 ];
 

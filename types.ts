@@ -1,4 +1,4 @@
-export type Category = 'Signature' | 'Classic' | 'Freezy' | 'Food';
+export type Category = 'Signature' | 'Classic' | 'Non - Coffee' | 'Freezy';
 
 export interface MenuItem {
   id: string;

@@ -50,6 +50,7 @@ const OurStoryPage: React.FC = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="lg:w-1/2"
             >
               <div className="relative">
@@ -69,6 +70,7 @@ const OurStoryPage: React.FC = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               className="lg:w-1/2"
             >
               <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm mb-3">
@@ -99,6 +101,7 @@ const OurStoryPage: React.FC = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="space-y-8">
                 <div>
@@ -123,6 +126,7 @@ const OurStoryPage: React.FC = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               className="relative"
             >
               <img
@@ -148,6 +152,7 @@ const OurStoryPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-16"
           >
             <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm mb-3">
@@ -164,6 +169,7 @@ const OurStoryPage: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-col md:flex-row items-center gap-10"
             >
               <div className="md:w-1/2">
@@ -196,6 +202,7 @@ const OurStoryPage: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-col md:flex-row-reverse items-center gap-10"
             >
               <div className="md:w-1/2">
@@ -233,6 +240,7 @@ const OurStoryPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-16"
           >
             <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm mb-3">

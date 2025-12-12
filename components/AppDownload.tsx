@@ -82,14 +82,14 @@ const AppDownload: React.FC = () => {
             >
               <a href="https://apps.apple.com/my/app/kenangan-coffee/id1643468374" target="_blank" rel="noopener noreferrer" className="group">
                 <img
-                  src="/images/download/App-Store-Badge.png"
+                  src="/images/download/AppStore.png"
                   alt="Download on App Store"
                   className="h-10 md:h-14 w-auto transition-transform group-hover:scale-105"
                 />
               </a>
               <a href="https://play.google.com/store/apps/details?id=com.kenangan.my&hl=ms" target="_blank" rel="noopener noreferrer" className="group">
                 <img
-                  src="/images/download/google-play-badge.png"
+                  src="/images/download/gPlay.png"
                   alt="Get it on Google Play"
                   className="h-10 md:h-14 w-auto transition-transform group-hover:scale-105"
                 />

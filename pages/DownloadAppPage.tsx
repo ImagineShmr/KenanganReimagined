@@ -12,7 +12,7 @@ const DownloadAppPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-brand-cream">
       {/* Hero Section - Responsive Design */}
-      <section className="relative min-h-screen lg:h-screen flex items-center overflow-hidden bg-gradient-to-br from-brand-espresso via-brand-espresso to-[#1a0f0d] pt-24 pb-12 lg:pt-0 lg:pb-0">
+      <section className="relative min-h-screen lg:h-screen flex items-center overflow-hidden bg-brand-espresso pt-24 pb-12 lg:pt-24 lg:pb-0">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             animate={{ rotate: 360 }}
@@ -70,14 +70,14 @@ const DownloadAppPage: React.FC = () => {
               <div className="flex flex-row gap-3 lg:gap-4 justify-center lg:justify-start">
                 <a href="https://apps.apple.com/my/app/kenangan-coffee/id1643468374" target="_blank" rel="noopener noreferrer" className="group">
                   <img
-                    src="/images/download/App-Store-Badge.png"
+                    src="/images/download/AppStore.png"
                     alt="Download on App Store"
                     className="h-11 lg:h-14 w-auto transition-transform group-hover:scale-105"
                   />
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.kenangan.my&hl=ms" target="_blank" rel="noopener noreferrer" className="group">
                   <img
-                    src="/images/download/google-play-badge.png"
+                    src="/images/download/gPlay.png"
                     alt="Get it on Google Play"
                     className="h-11 lg:h-14 w-auto transition-transform group-hover:scale-105"
                   />
@@ -121,10 +121,10 @@ const DownloadAppPage: React.FC = () => {
                 </div>
 
                 {/* Platform badges */}
-                <div className="flex items-center justify-center gap-3">
+                {/* <div className="flex items-center justify-center gap-3">
                   <span className="bg-brand-espresso/10 text-brand-espresso text-xs font-medium px-3 py-1 rounded-full">iOS</span>
                   <span className="bg-brand-espresso/10 text-brand-espresso text-xs font-medium px-3 py-1 rounded-full">Android</span>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           </div>
@@ -141,9 +141,15 @@ const DownloadAppPage: React.FC = () => {
       </section>
 
       {/* Features - Alternating Layout - Continuous with hero */}
-      <section className="relative pt-12 pb-20 bg-gradient-to-b from-[#1a0f0d] via-brand-espresso to-brand-espresso overflow-hidden">
+      <section className="relative pt-0 pb-20 bg-brand-espresso overflow-hidden -mt-1">
         {/* Decorative background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Continuation of hero's left circle */}
+          <motion.div
+            animate={{ rotate: -360 }}
+            transition={{ duration: 80, repeat: Infinity, ease: 'linear' }}
+            className="absolute -top-52 -left-20 w-72 h-72 border border-brand-gold/10 rounded-full"
+          />
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ duration: 80, repeat: Infinity, ease: 'linear' }}
@@ -165,6 +171,7 @@ const DownloadAppPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-20"
           >
             <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm mb-3">
@@ -181,6 +188,7 @@ const DownloadAppPage: React.FC = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="flex flex-col md:flex-row items-center gap-8 max-w-2xl"
             >
               <div className="md:w-1/4 flex justify-center flex-shrink-0">
@@ -206,6 +214,7 @@ const DownloadAppPage: React.FC = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="flex flex-col md:flex-row-reverse items-center gap-8 max-w-2xl ml-auto"
             >
               <div className="md:w-1/4 flex justify-center flex-shrink-0">
@@ -231,6 +240,7 @@ const DownloadAppPage: React.FC = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="flex flex-col md:flex-row items-center gap-8 max-w-2xl"
             >
               <div className="md:w-1/4 flex justify-center flex-shrink-0">
@@ -256,6 +266,7 @@ const DownloadAppPage: React.FC = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="flex flex-col md:flex-row-reverse items-center gap-8 max-w-2xl ml-auto"
             >
               <div className="md:w-1/4 flex justify-center flex-shrink-0">
@@ -281,6 +292,7 @@ const DownloadAppPage: React.FC = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="flex flex-col md:flex-row items-center gap-8 max-w-2xl"
             >
               <div className="md:w-1/4 flex justify-center flex-shrink-0">
@@ -307,6 +319,7 @@ const DownloadAppPage: React.FC = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="flex flex-col md:flex-row-reverse items-center gap-8 max-w-2xl ml-auto"
             >
               <div className="md:w-1/4 flex justify-center flex-shrink-0">
@@ -333,6 +346,7 @@ const DownloadAppPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mt-24"
           >
             <h3 className="font-serif text-xl md:text-4xl font-bold text-white">
@@ -345,6 +359,7 @@ const DownloadAppPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
             className="text-center mt-16 pt-16 border-t border-white/10"
           >
             <h2 className="font-serif text-2xl md:text-4xl font-bold text-white mb-4">
@@ -356,14 +371,14 @@ const DownloadAppPage: React.FC = () => {
             <div className="flex flex-row gap-4 justify-center">
               <a href="https://apps.apple.com/my/app/kenangan-coffee/id1643468374" target="_blank" rel="noopener noreferrer" className="group">
                 <img
-                  src="/images/download/App-Store-Badge.png"
+                  src="/images/download/AppStore.png"
                   alt="Download on App Store"
                   className="h-12 md:h-14 w-auto transition-transform group-hover:scale-105"
                 />
               </a>
               <a href="https://play.google.com/store/apps/details?id=com.kenangan.my&hl=ms" target="_blank" rel="noopener noreferrer" className="group">
                 <img
-                  src="/images/download/google-play-badge.png"
+                  src="/images/download/gPlay.png"
                   alt="Get it on Google Play"
                   className="h-12 md:h-14 w-auto transition-transform group-hover:scale-105"
                 />

@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8">
             {NAV_LINKS.map((link) => {
               const isActive = location.pathname === link.href;
               return (
@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Toggle */}
           <button
-            className={`md:hidden p-2 ${showScrolledStyle ? 'text-brand-espresso' : 'text-white'}`}
+            className={`lg:hidden p-2 ${showScrolledStyle ? 'text-brand-espresso' : 'text-white'}`}
             onClick={() => setIsMobileMenuOpen(true)}
           >
             <Menu size={28} />
@@ -109,8 +109,8 @@ const Navbar: React.FC = () => {
                     <Link
                       to={link.href}
                       className={`font-serif text-3xl transition-colors ${isActive
-                          ? 'text-brand-red'
-                          : 'text-brand-espresso hover:text-brand-red'
+                        ? 'text-brand-red'
+                        : 'text-brand-espresso hover:text-brand-red'
                         }`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >

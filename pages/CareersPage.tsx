@@ -96,6 +96,7 @@ const CareersPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-16"
           >
             <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm mb-3">
@@ -256,6 +257,7 @@ const CareersPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-16"
           >
             <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm mb-3">
@@ -272,6 +274,7 @@ const CareersPage: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               className="group"
             >
               <div className="relative overflow-hidden rounded-3xl mb-6 bg-brand-latte/30">
@@ -320,6 +323,7 @@ const CareersPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-12"
           >
             <h4 className="text-brand-red font-bold uppercase tracking-widest text-sm mb-3">
@@ -335,6 +339,7 @@ const CareersPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
             className="relative mb-8"
           >
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-brand-espresso/40" size={20} />
@@ -385,6 +390,7 @@ const CareersPage: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
               Ready to Make Memories?

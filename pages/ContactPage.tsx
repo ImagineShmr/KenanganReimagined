@@ -59,8 +59,8 @@ const ContactPage: React.FC = () => {
             {/* Contact Info */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="lg:w-1/3"
             >
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-brand-espresso mb-6">
@@ -102,8 +102,8 @@ const ContactPage: React.FC = () => {
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               className="lg:w-2/3"
             >
               {submitted ? (

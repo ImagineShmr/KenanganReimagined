@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-brand-cream border-t border-brand-espresso/5 pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 mb-12">
 
           {/* Brand + Address */}
           <div className="col-span-1">
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Links Container - pushed to right on desktop, left on mobile */}
-          <div className="col-span-1 md:col-span-2 flex justify-start md:justify-end gap-20 md:gap-32 md:pt-20">
+          <div className="col-span-1 lg:col-span-2 flex justify-start lg:justify-end gap-12 sm:gap-20 lg:gap-32 lg:pt-20">
             {/* Links 1 */}
             <div>
               <h4 className="font-bold text-brand-espresso mb-6">Company</h4>
@@ -96,12 +96,11 @@ const Footer: React.FC = () => {
 
             {/* Links 2 */}
             <div>
-              <h4 className="font-bold text-brand-espresso mb-6">Products</h4>
+              <h4 className="font-bold text-brand-espresso mb-6">Explore</h4>
               <ul className="space-y-4 text-sm text-brand-espresso/70">
-                <li><Link to="/menu" className="hover:text-brand-red transition-colors">Coffee</Link></li>
-                <li><Link to="/menu" className="hover:text-brand-red transition-colors">Non-Coffee</Link></li>
-                <li><Link to="/menu" className="hover:text-brand-red transition-colors">Freezy</Link></li>
-                <li><Link to="/download-app" className="hover:text-brand-red transition-colors">Download App</Link></li>
+                <li><Link to="/menu" className="hover:text-brand-red transition-colors">Menu</Link></li>
+                <li><Link to="/" className="hover:text-brand-red transition-colors">FAQ</Link></li>
+                <li><Link to="/download-app" className="hover:text-brand-red transition-colors">Rewards</Link></li>
               </ul>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 type MenuCategory = 'All' | 'Coffee' | 'Freezy' | 'Non-Coffee';
 
@@ -96,39 +96,44 @@ const MenuPage: React.FC = () => {
           </div>
 
           {/* Menu Grid */}
-          <motion.div
-            layout
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-8"
-          >
-            {filteredItems.map((item, index) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-8">
+            <AnimatePresence mode="wait">
               <motion.div
-                key={item.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.05 }}
-                className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
+                key={activeCategory}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="contents"
               >
-                {/* Image - flush to edges */}
-                <div className="relative overflow-hidden bg-gradient-to-br from-brand-latte/30 to-brand-cream aspect-square">
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
-                  />
-                </div>
+                {filteredItems.map((item) => (
+                  <div
+                    key={item.id}
+                    className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
+                  >
+                    {/* Image - flush to edges */}
+                    <div className="relative overflow-hidden bg-gradient-to-br from-brand-latte/30 to-brand-cream aspect-square">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
+                      />
+                    </div>
 
-                {/* Content - only has padding */}
-                <div className="text-center px-4 py-5">
-                  <h3 className="font-serif text-lg md:text-xl font-bold text-brand-espresso mb-2">
-                    {item.name}
-                  </h3>
-                  <p className="text-brand-espresso/50 text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
+                    {/* Content - only has padding */}
+                    <div className="text-center px-4 py-5">
+                      <h3 className="font-serif text-lg md:text-xl font-bold text-brand-espresso mb-2">
+                        {item.name}
+                      </h3>
+                      <p className="text-brand-espresso/50 text-sm leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </motion.div>
-            ))}
-          </motion.div>
+            </AnimatePresence>
+          </div>
 
           {/* Empty State */}
           {filteredItems.length === 0 && (
@@ -158,7 +163,7 @@ const MenuPage: React.FC = () => {
                 className="group"
               >
                 <img
-                  src="/images/download/App-Store-Badge.png"
+                  src="/images/download/AppStore.png"
                   alt="Download on App Store"
                   className="h-12 w-auto transition-transform group-hover:scale-105"
                 />
@@ -170,7 +175,7 @@ const MenuPage: React.FC = () => {
                 className="group"
               >
                 <img
-                  src="/images/download/google-play-badge.png"
+                  src="/images/download/gPlay.png"
                   alt="Get it on Google Play"
                   className="h-12 w-auto transition-transform group-hover:scale-105"
                 />

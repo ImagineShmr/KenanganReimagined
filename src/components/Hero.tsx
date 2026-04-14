@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="public/images/home/heroBg.avif"
+          src="/images/home/heroBg.avif"
           alt="Barista pouring latte art"
           className="w-full h-full object-cover object-center"
         />

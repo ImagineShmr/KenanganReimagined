@@ -7,7 +7,7 @@ const values = [
     title: "Sourcing",
     quote: "Harvesting at 4 AM",
     text: "It means getting up at 4 AM to harvest Arabica beans from the heart of Java & Sumatra.",
-    image: "public/images/home/harvest.jpg",
+    image: "/images/home/harvest.jpg",
     className: "md:col-span-1 md:row-span-2", // Tall card on left
   },
   {
@@ -15,7 +15,7 @@ const values = [
     title: "Curation",
     quote: "Triple Tasting Protocol",
     text: "Tasting the coffee samples three times before the beans even arrive at our roastery.",
-    image: "public/images/home/tasting2.avif",
+    image: "/images/home/tasting2.avif",
     className: "md:col-span-2 md:row-span-1", // Wide card top right
   },
   {
@@ -23,7 +23,7 @@ const values = [
     title: "Precision",
     quote: "0.1% Consistency",
     text: "Constantly working on improving even 0.1% consistency of the Probat P60.",
-    image: "public/images/home/consistency.jpg",
+    image: "/images/home/consistency.jpg",
     className: "md:col-span-1 md:row-span-1", // Square bottom middle
   },
   {
@@ -31,7 +31,7 @@ const values = [
     title: "Craft",
     quote: "To The Last Drop",
     text: "This is how we maintain excellence, to the very last drop of coffee.",
-    image: "public/images/home/coffee_drop.avif",
+    image: "/images/home/coffee_drop.avif",
     className: "md:col-span-1 md:row-span-1", // Square bottom right
   }
 ];

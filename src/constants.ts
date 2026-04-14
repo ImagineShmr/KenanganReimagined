@@ -1,4 +1,4 @@
-import { MenuItem, NavLink, Stat } from './types';
+import { MenuItem, NavLink, Stat } from './types.ts';
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Home', href: '/' },

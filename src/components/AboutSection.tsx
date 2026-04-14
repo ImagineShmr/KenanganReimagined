@@ -16,7 +16,7 @@ const AboutSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                src="public/images/home/cheers.avif"
+                src="/images/home/cheers.avif"
                 alt="Coffee Beans"
                 className="rounded-2xl shadow-lg w-full h-80 object-cover mt-12"
               />
@@ -25,7 +25,7 @@ const AboutSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                src="public/images/home/coffee_journey.jpg"
+                src="/images/home/coffee_journey.jpg"
                 alt="Happy Customer"
                 className="rounded-2xl shadow-lg w-full h-80 object-cover"
               />

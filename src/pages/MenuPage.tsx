@@ -13,27 +13,27 @@ interface MenuItem {
 
 const MENU_DATA: MenuItem[] = [
   // Coffee
-  { id: 1, name: 'Creamy Latte', description: 'Extra creamy, extra smooth', category: 'Coffee', image: 'public/images/menu/creamy-latte.jpg' },
-  { id: 2, name: 'Kenangan Latte', description: 'Our signature palm sugar latte', category: 'Coffee', image: 'public/images/menu/kenangan-latte.jpg' },
-  { id: 3, name: 'Salted Caramel Macchiato', description: 'Sweet meets salty perfection', category: 'Coffee', image: 'public/images/menu/salted-caramel-macchiato.jpg' },
-  { id: 4, name: 'Mocha', description: 'Chocolate lovers\' favorite', category: 'Coffee', image: 'public/images/menu/mocha.jpg' },
-  { id: 5, name: 'Avocado Coffee', description: 'Creamy avocado meets espresso', category: 'Coffee', image: 'public/images/menu/avocado-coffee.jpg' },
-  { id: 6, name: 'Americano', description: 'Bold double shot espresso', category: 'Coffee', image: 'public/images/menu/americano.jpg' },
-  { id: 7, name: 'Classic Latte', description: 'Smooth espresso with steamed milk', category: 'Coffee', image: 'public/images/menu/classic-latte.jpg' },
-  { id: 8, name: 'Caramel Latte', description: 'Rich caramel with creamy milk', category: 'Coffee', image: 'public/images/menu/caramel-latte.jpg' },
+  { id: 1, name: 'Creamy Latte', description: 'Extra creamy, extra smooth', category: 'Coffee', image: '/images/menu/creamy-latte.jpg' },
+  { id: 2, name: 'Kenangan Latte', description: 'Our signature palm sugar latte', category: 'Coffee', image: '/images/menu/kenangan-latte.jpg' },
+  { id: 3, name: 'Salted Caramel Macchiato', description: 'Sweet meets salty perfection', category: 'Coffee', image: '/images/menu/salted-caramel-macchiato.jpg' },
+  { id: 4, name: 'Mocha', description: 'Chocolate lovers\' favorite', category: 'Coffee', image: '/images/menu/mocha.jpg' },
+  { id: 5, name: 'Avocado Coffee', description: 'Creamy avocado meets espresso', category: 'Coffee', image: '/images/menu/avocado-coffee.jpg' },
+  { id: 6, name: 'Americano', description: 'Bold double shot espresso', category: 'Coffee', image: '/images/menu/americano.jpg' },
+  { id: 7, name: 'Classic Latte', description: 'Smooth espresso with steamed milk', category: 'Coffee', image: '/images/menu/classic-latte.jpg' },
+  { id: 8, name: 'Caramel Latte', description: 'Rich caramel with creamy milk', category: 'Coffee', image: '/images/menu/caramel-latte.jpg' },
   // Freezy
-  { id: 9, name: 'Thai Tea', description: 'Authentic Thai milk tea blend', category: 'Freezy', image: 'public/images/menu/thai-tea.jpg' },
-  { id: 10, name: 'Watermelon Latte', description: 'Refreshing summer favorite', category: 'Freezy', image: 'public/images/menu/watermelon-latte.jpg' },
-  { id: 11, name: 'Salted Caramel (Freezy)', description: 'Icy sweet and salty bliss', category: 'Freezy', image: 'public/images/menu/freezy-salted-caramel.jpg' },
-  { id: 12, name: 'Mocha (Freezy)', description: 'Chocolatey frozen indulgence', category: 'Freezy', image: 'public/images/menu/freezy-mocha.jpg' },
-  { id: 13, name: 'Double Chocolate', description: 'Double the chocolate, double the joy', category: 'Freezy', image: 'public/images/menu/double-chocolate.jpg' },
+  { id: 9, name: 'Thai Tea', description: 'Authentic Thai milk tea blend', category: 'Freezy', image: '/images/menu/thai-tea.jpg' },
+  { id: 10, name: 'Watermelon Latte', description: 'Refreshing summer favorite', category: 'Freezy', image: '/images/menu/watermelon-latte.jpg' },
+  { id: 11, name: 'Salted Caramel (Freezy)', description: 'Icy sweet and salty bliss', category: 'Freezy', image: '/images/menu/freezy-salted-caramel.jpg' },
+  { id: 12, name: 'Mocha (Freezy)', description: 'Chocolatey frozen indulgence', category: 'Freezy', image: '/images/menu/freezy-mocha.jpg' },
+  { id: 13, name: 'Double Chocolate', description: 'Double the chocolate, double the joy', category: 'Freezy', image: '/images/menu/double-chocolate.jpg' },
   // Non-Coffee
-  { id: 14, name: 'Ice Shaken Roasted Tea', description: 'Aromatic roasted tea perfection', category: 'Non-Coffee', image: 'public/images/menu/roasted-tea.jpg' },
-  { id: 15, name: 'Ice Shaken Strawberry Tea', description: 'Fruity and refreshing delight', category: 'Non-Coffee', image: 'public/images/menu/strawberry-tea.jpg' },
-  { id: 16, name: 'Avocado Milk', description: 'Creamy avocado smoothie', category: 'Non-Coffee', image: 'public/images/menu/avocado-milk.jpg' },
-  { id: 17, name: 'Chamomile Tea', description: 'Calming floral infusion', category: 'Non-Coffee', image: 'public/images/menu/chamomile-tea.jpg' },
-  { id: 18, name: 'Green Tea', description: 'Classic Japanese green tea', category: 'Non-Coffee', image: 'public/images/menu/green-tea.jpg' },
-  { id: 19, name: 'Chocolate', description: 'Rich and velvety chocolate', category: 'Non-Coffee', image: 'public/images/menu/chocolate.jpg' },
+  { id: 14, name: 'Ice Shaken Roasted Tea', description: 'Aromatic roasted tea perfection', category: 'Non-Coffee', image: '/images/menu/roasted-tea.jpg' },
+  { id: 15, name: 'Ice Shaken Strawberry Tea', description: 'Fruity and refreshing delight', category: 'Non-Coffee', image: '/images/menu/strawberry-tea.jpg' },
+  { id: 16, name: 'Avocado Milk', description: 'Creamy avocado smoothie', category: 'Non-Coffee', image: '/images/menu/avocado-milk.jpg' },
+  { id: 17, name: 'Chamomile Tea', description: 'Calming floral infusion', category: 'Non-Coffee', image: '/images/menu/chamomile-tea.jpg' },
+  { id: 18, name: 'Green Tea', description: 'Classic Japanese green tea', category: 'Non-Coffee', image: '/images/menu/green-tea.jpg' },
+  { id: 19, name: 'Chocolate', description: 'Rich and velvety chocolate', category: 'Non-Coffee', image: '/images/menu/chocolate.jpg' },
 ];
 
 const CATEGORIES: MenuCategory[] = ['All', 'Coffee', 'Freezy', 'Non-Coffee'];
